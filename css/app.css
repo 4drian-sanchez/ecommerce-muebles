@@ -1,0 +1,103 @@
+:root {
+  --bs-blue: #037bc0;
+  --bs-green: #8cbc00;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+h3 {
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.text-primary,
+.nombre-sitio {
+  color: var(--bs-blue) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-blue) !important;
+}
+
+.btn-success {
+  background-color: var(--bs-green) !important;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 25rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .producto img {
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.categoria img {
+  transition: transform 300ms ease-in-out;
+}
+
+.categoria img:hover {
+  transform: scale(1.2);
+}
+
+.sidebar {
+  align-self: flex-start;
+}
+
+.galeria li:not(li:last-of-type) {
+  margin-bottom: 1rem;
+}
